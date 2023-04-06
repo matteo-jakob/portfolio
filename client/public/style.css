@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@200;400&family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+
+:root {
+  --background: #16213e;
+  --nav-background: #1f2f5ae3;
+  --dark: #0f3460;
+  --main: #533483;
+  --accent: #e94560;
+  --shadow: #191e30;
+
+  --foreground: gainsboro;
+  --btn-background: #0f3460;
+  --btn-background-highlight: #113c70;
+
+  --font-family-sans: "Chivo Mono", monospace;
+  --font-family-serif: "Roboto Slab", serif;
+
+  --p-size: 1.2rem;
+}
+html {
+  scroll-padding-top: 10vh;
+  scroll-behavior: smooth;
+}
+body {
+  box-sizing: border-box;
+  background-color: var(--background);
+  color: var(--foreground);
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--foreground);
+  transition: all 0.3s ease 0s;
+}
+
+a:hover {
+  color: var(--accent);
+}
+
+.btn {
+  border-radius: 10px;
+  padding: 20px 35px;
+  border: 2px solid var(--accent);
+}
+
+/*=================== Nav =================*/
+
+header {
+  background-color: var(--nav-background);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+  height: 10vh;
+  width: calc(100vw - 20%);
+  overflow: hidden;
+  backdrop-filter: blur(2px);
+
+  z-index: 2;
+  position: fixed;
+  top: 0;
+
+  transition: transform 0.3s;
+  transition: all 0.3s ease 0;
+}
+
+.header--hidden {
+  transform: translateY(-16vh);
+}
+
+nav > ul {
+  list-style-type: none;
+}
+
+nav > ul > li {
+  display: inline-block;
+  padding: 0 20px;
+}
+
+.list-number{
+    color: var(--accent);
+}
+
+/*=================== Pages =================*/
+#pages{
+    padding: 0 25vw;
+}
+#home {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.explore {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10vh;
+    align-items: center;
+}
+
+.explore > i {
+    position: absolute;
+    bottom: 20vh;
+    color: var(--foreground);
+    animation: float 2s ease-in-out infinite 2s;
+}
+
+@keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-1vh);
+    }
+  }
+#about {
+  height: 100vh;
+}
+#experience {
+  height: 100vh;
+}
+#work {
+  height: 100vh;
+}
+#contact {
+  height: 70vh;
+}
+footer {
+  height: 30vh;
+}
+/*=================== Animation =================*/
+
+.underscore_blink {
+  animation: blinker 1s step-start infinite;
+}
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+.typed-out {
+  font-size: 2rem;
+  color: var(--accent);
+}

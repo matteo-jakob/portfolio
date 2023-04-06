@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/ba38d6d3db.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Matteo Jakob</title>
+  </head>
+  <body>
+    <header>
+      <a href="#home" id="logo">
+        <i class="fa-solid fa-code"></i>
+      </a>
+      <nav>
+        <ul>
+          <li>
+            <span class="list-number">1. </span><a href="#about">About</a>
+          </li>
+          <li>
+            <span class="list-number">2. </span
+            ><a href="#experience">Experience</a>
+          </li>
+          <li><span class="list-number">3. </span><a href="#work">Work</a></li>
+          <li>
+            <span class="list-number">4. </span><a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div id="pages">
+      <div id="home">
+        <h1 class="typed-text">
+          <span id="typed-text"></span><span class="underscore_blink">_</span>
+        </h1>
+        <div class="explore">
+            <a href="#about" class="btn">EXPLORE</a>
+            <i class="fa-solid fa-chevron-down"></i>
+        </div>
+        
+      </div>
+      <div id="about">
+        <h1>About Me</h1>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate,
+          ut, neque repellendus eveniet dolore soluta iure quasi repellat qui
+          consectetur velit dignissimos dolorum! Cum voluptatem provident ullam
+          tempora vel pariatur.
+        </p>
+      </div>
+      <div id="experience">
+        <h1>Experience</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
+          veritatis, mollitia, placeat eum quod beatae dignissimos culpa rerum
+          assumenda cum quasi temporibus. Tempora harum molestias vero cumque
+          quisquam. Aut, sunt.
+        </p>
+      </div>
+      <div id="work">
+        <h1>Work</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, sapiente
+          nihil placeat maxime tenetur eum perspiciatis ipsa aliquam debitis
+          fugiat at nostrum cum, officia, modi autem nemo repellat laudantium
+          culpa.
+        </p>
+      </div>
+      <div id="contact">
+        <h1>Contact</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi
+          nesciunt deserunt recusandae aliquid officiis dolorem consectetur
+          libero similique ex architecto id ipsum accusamus, dolores facilis
+          corrupti quidem quo quae! Adipisci?
+        </p>
+      </div>
+    </div>
+
+    <footer>Copyright &copy 2023</footer>
+    <script src="script.js"></script>
+    <script>
+      const targetElement = document.getElementById("typed-text");
+      const textToType = "Hey! I'm Matteo Jakob, a Developer.";
+      typeOut(textToType, targetElement);
+    </script>
+  </body>
+</html>

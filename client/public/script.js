@@ -1,7 +1,8 @@
+// Welcome Screen animation
 function typeOut(text, targetElement) {
-  const typingDelay = 50;
-  const randomDelayMin = 20;
-  const randomDelayMax = 80;
+  const typingDelay = 20;
+  const randomDelayMin = 10;
+  const randomDelayMax = 100;
   let i = 0;
 
   const typeNextChar = () => {
@@ -25,6 +26,7 @@ function typeOut(text, targetElement) {
   typeNextChar();
 }
 
+// Header animation
 const header = document.querySelector("header");
 let lastScrollY = window.scrollY;
 
@@ -36,3 +38,17 @@ window.addEventListener("scroll", () => {
   }
   lastScrollY = window.scrollY;
 });
+
+//elements animation
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show");
+    } else {
+      entry.target.classList.remove("show");
+    }
+  });
+});
+
+const hiddenElements = document.querySelectorAll(".hidden");
+hiddenElements.forEach((el) => observer.observe(el));

@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="style.css" />
     <title>Matteo Jakob</title>
   </head>
+
+
   <body>
     <header>
       <a href="#home" id="logo">
@@ -33,43 +35,47 @@
         </ul>
       </nav>
     </header>
+
+
     <div id="sidebar">
       <ul>
-        <li>
+        <li class="hidden">
           <a href="https://github.com/BetterMJ" target="_blank">
             <i class="lni lni-github"></i>
           </a>
         </li>
-        <li>
+        <li class="hidden">
           <a href="https://www.instagram.com/matteo.jakob/" target="_blank">
             <i class="lni lni-instagram"></i>
           </a>
         </li>
-        <li>
+        <li class="hidden">
           <a href="https://twitter.com/matteojkob" target="_blank">
             <i class="lni lni-twitter"></i>
           </a>
         </li>
-        <li>
-          <a href="linkedin" target="_blank">
+        <li class="hidden">
+          <a href="https://www.linkedin.com/in/matteo-jakob-89b8a3263/" target="_blank">
             <i class="lni lni-linkedin"></i>
           </a>
         </li>
       </ul>
     </div>
+
+
     <div id="pages">
       <div id="home">
-        <h1 class="typed-text">
+        <h1 class="typed-text hidden">
           <span id="typed-text"></span><span class="underscore_blink">_</span>
         </h1>
-        <div class="explore">
+        <div class="explore hidden">
           <a href="#about" class="btn">EXPLORE</a>
           <i class="fa-solid fa-chevron-down"></i>
         </div>
       </div>
-      <div id="about">
+      <div id="about" class="hidden">
         <div>
-          <h1>About Me</h1>
+          <h1><span class="list-number">1. </span>About Me</h1>
           <p>
             Hey! Lorem ipsum dolor sit, amet consectetur adipisicing elit.
             Voluptate, ut, neque repellendus eveniet dolore soluta iure quasi
@@ -78,34 +84,45 @@
             Here is some langs I've worked with:
           </p>
           <ul id="skills">
-            <li>JavaScript</li>
-            <li>Python</li>
-            <li>C#</li>
-            <li>SQLDB</li>
-            <li>NoSQLDB</li>
+            <li class="hidden">JavaScript</li>
+            <li class="hidden">Python</li>
+            <li class="hidden">C#</li>
+            <li class="hidden">SQLDB</li>
+            <li class="hidden">NoSQLDB</li>
           </ul>
         </div>
         <p id="pfp">picture somewhere here</p>
       </div>
-      <div id="experience">
-        <h1>Experience</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
-          veritatis, mollitia, placeat eum quod beatae dignissimos culpa rerum
-          assumenda cum quasi temporibus. Tempora harum molestias vero cumque
-          quisquam. Aut, sunt.
-        </p>
+      <div id="experience" class="hidden">
+        <h1><span class="list-number">2. </span>Experience</h1>
+        <div id="experience-content">
+          <div id="timeline">
+            <ul>
+              <li>2005</li>
+              <li>2012</li>
+              <li>2015</li>
+              <li>2019</li>
+              <li>2023</li>
+            </ul>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
+            veritatis, mollitia, placeat eum quod beatae dignissimos culpa rerum
+            assumenda cum quasi temporibus. Tempora harum molestias vero cumque
+            quisquam. Aut, sunt.
+          </p>
+        </div>
       </div>
-      <div id="work">
-        <h1>Cool stuff</h1>
+      <div id="work" class="hidden">
+        <h1><span class="list-number">3. </span>Cool stuff</h1>
         <div class="card">
           <div class="project-description">
             <h2>Project Name</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
-              quibusdam culpa distinctio eius blanditiis velit unde quidem, hic
-              rem totam quam cum harum nesciunt dignissimos ut quis sunt dolore
-              impedit.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consequatur quibusdam culpa distinctio eius blanditiis velit unde
+              quidem, hic rem totam quam cum harum nesciunt dignissimos ut quis
+              sunt dolore impedit.
             </p>
             <ul>
               <li>language1</li>
@@ -119,23 +136,25 @@
           </div>
           <p class="project-picture">Heres the image</p>
         </div>
-        <a href="https://github.com/BetterMJ" target="_blank" class="btn">See More</a>
+        <a href="https://github.com/BetterMJ" target="_blank" class="btn center"
+          >See More</a
+        >
       </div>
-      <div id="contact">
-        <h1>Reach out</h1>
+      <div id="contact" class="hidden">
+        <h1><span class="list-number">4. </span>Reach out</h1>
         <p>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi
           nesciunt deserunt recusandae aliquid officiis dolorem consectetur
           libero similique ex architecto id ipsum accusamus, dolores facilis
           corrupti quidem quo quae! Adipisci?
         </p>
-        <a href="mailto:matteo.jakob@gmail.com" class="btn">Contact</a>
+        <a href="mailto:matteo.jakob@gmail.com" class="btn center">Contact</a>
       </div>
+      <footer>
+        <p>Copyright &copy 2023. All Rights Reserved. Matteo Jakob.</p>
+      </footer>
     </div>
 
-    <footer>
-      <p>Copyright &copy 2023. All Rights Reserved. Matteo Jakob.</p>
-    </footer>
     <script src="script.js"></script>
     <script>
       const targetElement = document.getElementById("typed-text");

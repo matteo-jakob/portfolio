@@ -8,6 +8,7 @@
       src="https://kit.fontawesome.com/ba38d6d3db.js"
       crossorigin="anonymous"
     ></script>
+    <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
     <title>Matteo Jakob</title>
   </head>
@@ -32,25 +33,59 @@
         </ul>
       </nav>
     </header>
+    <div id="sidebar">
+      <ul>
+        <li>
+          <a href="https://github.com/BetterMJ" target="_blank">
+            <i class="lni lni-github"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/matteo.jakob/" target="_blank">
+            <i class="lni lni-instagram"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://twitter.com/matteojkob" target="_blank">
+            <i class="lni lni-twitter"></i>
+          </a>
+        </li>
+        <li>
+          <a href="linkedin" target="_blank">
+            <i class="lni lni-linkedin"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
     <div id="pages">
       <div id="home">
         <h1 class="typed-text">
           <span id="typed-text"></span><span class="underscore_blink">_</span>
         </h1>
         <div class="explore">
-            <a href="#about" class="btn">EXPLORE</a>
-            <i class="fa-solid fa-chevron-down"></i>
+          <a href="#about" class="btn">EXPLORE</a>
+          <i class="fa-solid fa-chevron-down"></i>
         </div>
-        
       </div>
       <div id="about">
-        <h1>About Me</h1>
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate,
-          ut, neque repellendus eveniet dolore soluta iure quasi repellat qui
-          consectetur velit dignissimos dolorum! Cum voluptatem provident ullam
-          tempora vel pariatur.
-        </p>
+        <div>
+          <h1>About Me</h1>
+          <p>
+            Hey! Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Voluptate, ut, neque repellendus eveniet dolore soluta iure quasi
+            repellat qui consectetur velit dignissimos dolorum! Cum voluptatem
+            provident ullam tempora vel pariatur. <br />
+            Here is some langs I've worked with:
+          </p>
+          <ul id="skills">
+            <li>JavaScript</li>
+            <li>Python</li>
+            <li>C#</li>
+            <li>SQLDB</li>
+            <li>NoSQLDB</li>
+          </ul>
+        </div>
+        <p id="pfp">picture somewhere here</p>
       </div>
       <div id="experience">
         <h1>Experience</h1>
@@ -62,26 +97,45 @@
         </p>
       </div>
       <div id="work">
-        <h1>Work</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, sapiente
-          nihil placeat maxime tenetur eum perspiciatis ipsa aliquam debitis
-          fugiat at nostrum cum, officia, modi autem nemo repellat laudantium
-          culpa.
-        </p>
+        <h1>Cool stuff</h1>
+        <div class="card">
+          <div class="project-description">
+            <h2>Project Name</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
+              quibusdam culpa distinctio eius blanditiis velit unde quidem, hic
+              rem totam quam cum harum nesciunt dignissimos ut quis sunt dolore
+              impedit.
+            </p>
+            <ul>
+              <li>language1</li>
+              <li>language2</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://github.com/BetterMJ" target="_blank">
+                <i class="lni lni-github"></i>
+              </a>
+            </div>
+          </div>
+          <p class="project-picture">Heres the image</p>
+        </div>
+        <a href="https://github.com/BetterMJ" target="_blank" class="btn">See More</a>
       </div>
       <div id="contact">
-        <h1>Contact</h1>
+        <h1>Reach out</h1>
         <p>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi
           nesciunt deserunt recusandae aliquid officiis dolorem consectetur
           libero similique ex architecto id ipsum accusamus, dolores facilis
           corrupti quidem quo quae! Adipisci?
         </p>
+        <a href="mailto:matteo.jakob@gmail.com" class="btn">Contact</a>
       </div>
     </div>
 
-    <footer>Copyright &copy 2023</footer>
+    <footer>
+      <p>Copyright &copy 2023. All Rights Reserved. Matteo Jakob.</p>
+    </footer>
     <script src="script.js"></script>
     <script>
       const targetElement = document.getElementById("typed-text");

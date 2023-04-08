@@ -13,61 +13,64 @@
     <title>Matteo Jakob</title>
   </head>
 
-
   <body>
     <header>
       <a href="#home" id="logo">
         <i class="fa-solid fa-code"></i>
       </a>
       <nav>
-        <ul>
-          <li>
+        <ul id="headerLinks">
+          <li class="hidden">
             <span class="list-number">1. </span><a href="#about">About</a>
           </li>
-          <li>
+          <li class="hidden">
             <span class="list-number">2. </span
             ><a href="#experience">Experience</a>
           </li>
-          <li><span class="list-number">3. </span><a href="#work">Work</a></li>
-          <li>
+          <li class="hidden">
+            <span class="list-number">3. </span><a href="#work">Work</a>
+          </li>
+          <li class="hidden">
             <span class="list-number">4. </span><a href="#contact">Contact</a>
           </li>
         </ul>
       </nav>
     </header>
 
-
-    <div id="sidebar">
+    <div id="sidebar" class="hidden">
       <ul>
-        <li class="hidden">
+        <li>
           <a href="https://github.com/BetterMJ" target="_blank">
             <i class="lni lni-github"></i>
           </a>
         </li>
-        <li class="hidden">
+        <li>
           <a href="https://www.instagram.com/matteo.jakob/" target="_blank">
             <i class="lni lni-instagram"></i>
           </a>
         </li>
-        <li class="hidden">
+        <li>
           <a href="https://twitter.com/matteojkob" target="_blank">
             <i class="lni lni-twitter"></i>
           </a>
         </li>
-        <li class="hidden">
-          <a href="https://www.linkedin.com/in/matteo-jakob-89b8a3263/" target="_blank">
+        <li>
+          <a
+            href="https://www.linkedin.com/in/matteo-jakob-89b8a3263/"
+            target="_blank"
+          >
             <i class="lni lni-linkedin"></i>
           </a>
         </li>
       </ul>
     </div>
 
-
     <div id="pages">
       <div id="home">
         <h1 class="typed-text hidden">
           <span id="typed-text"></span><span class="underscore_blink">_</span>
         </h1>
+        <p class="hidden home-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae debitis doloribus quidem facere dolore error quam tenetur reprehenderit, temporibus accusamus consequuntur rerum quod magni cumque enim eaque sequi quisquam minima.</p>
         <div class="explore hidden">
           <a href="#about" class="btn">EXPLORE</a>
           <i class="fa-solid fa-chevron-down"></i>
@@ -87,59 +90,123 @@
             <li class="hidden">JavaScript</li>
             <li class="hidden">Python</li>
             <li class="hidden">C#</li>
-            <li class="hidden">SQLDB</li>
-            <li class="hidden">NoSQLDB</li>
+            <li class="hidden">EJS</li>
+            <li class="hidden">SQL</li>
+            <li class="hidden">NoSQL</li>
+            <li class="hidden">HTML</li>
+            <li class="hidden">CSS</li>
           </ul>
         </div>
         <p id="pfp">picture somewhere here</p>
       </div>
+
       <div id="experience" class="hidden">
         <h1><span class="list-number">2. </span>Experience</h1>
         <div id="experience-content">
           <div id="timeline">
             <ul>
-              <li>2005</li>
               <li>2012</li>
-              <li>2015</li>
-              <li>2019</li>
-              <li>2023</li>
+              <li>2018</li>
+              <li>2021</li>
+              <li>2024</li>
+              <li>2025</li>
             </ul>
           </div>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
-            veritatis, mollitia, placeat eum quod beatae dignissimos culpa rerum
-            assumenda cum quasi temporibus. Tempora harum molestias vero cumque
-            quisquam. Aut, sunt.
-          </p>
+          <div>
+            <p>
+              Primary School Kallern
+            </p>
+            <p>
+              Bezirksschule Muri
+            </p>
+            <p>
+              Informatikmittelschule Aarau
+            </p>
+            <p>
+              IMS-Praxis in: ?
+            </p>
+            <p>
+              Job in: ?
+            </p>
+          </div>
         </div>
       </div>
-      <div id="work" class="hidden">
+
+      <div id="work">
         <h1><span class="list-number">3. </span>Cool stuff</h1>
         <div class="card">
-          <div class="project-description">
-            <h2>Project Name</h2>
+          <div class="project-description hidden">
+            <h2>NumberSystems</h2>
+            <img src="img/NmberSystems.png" alt="" class="hidden" />
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Consequatur quibusdam culpa distinctio eius blanditiis velit unde
               quidem, hic rem totam quam cum harum nesciunt dignissimos ut quis
               sunt dolore impedit.
             </p>
-            <ul>
-              <li>language1</li>
-              <li>language2</li>
-            </ul>
-            <div class="project-links">
-              <a href="https://github.com/BetterMJ" target="_blank">
-                <i class="lni lni-github"></i>
-              </a>
+            <div>
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+              </ul>
+              <div class="project-links">
+                <a href="https://github.com/BetterMJ/NumberSystems" target="_blank">
+                  <i class="lni lni-github"></i>
+                </a>
+              </div>
             </div>
           </div>
-          <p class="project-picture">Heres the image</p>
+        </div>
+        <div class="card">
+          <div class="project-description hidden">
+            <h2>GameCenter</h2>
+            <img src="img/GameCenter.png" alt="" class="hidden" />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consequatur quibusdam culpa distinctio eius blanditiis velit unde
+              quidem, hic rem totam quam cum harum nesciunt dignissimos ut quis
+              sunt dolore impedit.
+            </p>
+            <div>
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+              </ul>
+              <div class="project-links">
+                <a href="https://github.com/BetterMJ/GameCenter" target="_blank">
+                  <i class="lni lni-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="project-description hidden">
+            <h2>Repeatr - Coming Soon ...</h2>
+            <p class="soon">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Blanditiis quibusdam ipsum temporibus labore excepturi dolorem
+              nihil exercitationem doloremque numquam hic? Modi assumenda iusto
+              eligendi itaque qui earum amet, mollitia dignissimos.
+            </p>
+            <div>
+              <ul>
+                <li>NoSQL</li>
+                <li>EJS</li>
+                <li>JavaScript</li>
+                <li>HTML</li>
+                <li>CSS</li>
+              </ul>
+            </div>
+          </div>
         </div>
         <a href="https://github.com/BetterMJ" target="_blank" class="btn center"
           >See More</a
         >
       </div>
+
       <div id="contact" class="hidden">
         <h1><span class="list-number">4. </span>Reach out</h1>
         <p>

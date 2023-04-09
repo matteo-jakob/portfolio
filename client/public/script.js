@@ -1,6 +1,6 @@
 // Welcome Screen animation
 function typeOut(text, targetElement) {
-  const typingDelay = 20;
+  const typingDelay = 50;
   const randomDelayMin = 10;
   const randomDelayMax = 100;
   let i = 0;

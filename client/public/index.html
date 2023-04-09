@@ -70,7 +70,11 @@
         <h1 class="typed-text hidden">
           <span id="typed-text"></span><span class="underscore_blink">_</span>
         </h1>
-        <p class="hidden home-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae debitis doloribus quidem facere dolore error quam tenetur reprehenderit, temporibus accusamus consequuntur rerum quod magni cumque enim eaque sequi quisquam minima.</p>
+        <p class="hidden home-p">
+          My expertise lies in building and occasionally designing software that
+          delights users and solves complex problems. <br />
+          Oh, and I love new experiences :)
+        </p>
         <div class="explore hidden">
           <a href="#about" class="btn">EXPLORE</a>
           <i class="fa-solid fa-chevron-down"></i>
@@ -80,11 +84,16 @@
         <div>
           <h1><span class="list-number">1. </span>About Me</h1>
           <p>
-            Hey! Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            Voluptate, ut, neque repellendus eveniet dolore soluta iure quasi
-            repellat qui consectetur velit dignissimos dolorum! Cum voluptatem
-            provident ullam tempora vel pariatur. <br />
-            Here is some langs I've worked with:
+            Howdy! I'm Matteo Jakob and love creating stuff. My Interest in
+            computers spiked at already a young age because I had access one,
+            though recently I took it up a notch and wanted understand this
+            machine and do stuff with it. <br />
+            <br />
+
+            <span class="list-number">Today</span>, I'm constantly working on a
+            variety of projects through working at IMS. <br />
+            <br />
+            Here is some stuff I've worked with:
           </p>
           <ul id="skills">
             <li class="hidden">JavaScript</li>
@@ -97,7 +106,7 @@
             <li class="hidden">CSS</li>
           </ul>
         </div>
-        <p id="pfp">picture somewhere here</p>
+        <img id="pfp" src="https://cdn.pixabay.com/photo/2016/11/18/19/07/happy-1836445_960_720.jpg" alt="" class="hidden">
       </div>
 
       <div id="experience" class="hidden">
@@ -113,36 +122,26 @@
             </ul>
           </div>
           <div>
-            <p>
-              Primary School Kallern
-            </p>
-            <p>
-              Bezirksschule Muri
-            </p>
-            <p>
-              Informatikmittelschule Aarau
-            </p>
-            <p>
-              IMS-Praxis in: ?
-            </p>
-            <p>
-              Job in: ?
-            </p>
+            <p>Primary School Kallern</p>
+            <p>Bezirksschule Muri</p>
+            <p>Informatikmittelschule Aarau</p>
+            <p>IMS-Praxis in: ?</p>
+            <p>Job in: ?</p>
           </div>
         </div>
       </div>
 
       <div id="work">
-        <h1><span class="list-number">3. </span>Cool stuff</h1>
+        <h1><span class="list-number">3. </span>Projects</h1>
         <div class="card">
           <div class="project-description hidden">
             <h2>NumberSystems</h2>
             <img src="img/NmberSystems.png" alt="" class="hidden" />
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Consequatur quibusdam culpa distinctio eius blanditiis velit unde
-              quidem, hic rem totam quam cum harum nesciunt dignissimos ut quis
-              sunt dolore impedit.
+              Convert numbers into any system with ease on my and my colleague's
+              website. Our user-friendly interface allows for seamless
+              conversion of binary, decimal, hexadecimal, and more. Say goodbye
+              to manual calculations and give it a shot!
             </p>
             <div>
               <ul>
@@ -151,7 +150,10 @@
                 <li>JavaScript</li>
               </ul>
               <div class="project-links">
-                <a href="https://github.com/BetterMJ/NumberSystems" target="_blank">
+                <a
+                  href="https://github.com/BetterMJ/NumberSystems"
+                  target="_blank"
+                >
                   <i class="lni lni-github"></i>
                 </a>
               </div>
@@ -163,10 +165,10 @@
             <h2>GameCenter</h2>
             <img src="img/GameCenter.png" alt="" class="hidden" />
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Consequatur quibusdam culpa distinctio eius blanditiis velit unde
-              quidem, hic rem totam quam cum harum nesciunt dignissimos ut quis
-              sunt dolore impedit.
+              With two exciting games to choose from, Battleship and Pong,
+              you'll never run out of fun. Challenge your friends (pong) or play
+              against the computer (battleships), and see if you have what it
+              takes to come out on top.
             </p>
             <div>
               <ul>
@@ -175,7 +177,10 @@
                 <li>JavaScript</li>
               </ul>
               <div class="project-links">
-                <a href="https://github.com/BetterMJ/GameCenter" target="_blank">
+                <a
+                  href="https://github.com/BetterMJ/GameCenter"
+                  target="_blank"
+                >
                   <i class="lni lni-github"></i>
                 </a>
               </div>
@@ -210,12 +215,10 @@
       <div id="contact" class="hidden">
         <h1><span class="list-number">4. </span>Reach out</h1>
         <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi
-          nesciunt deserunt recusandae aliquid officiis dolorem consectetur
-          libero similique ex architecto id ipsum accusamus, dolores facilis
-          corrupti quidem quo quae! Adipisci?
+          Got a question or just want to say hi? Drop me a message and let's
+          chat!
         </p>
-        <a href="mailto:matteo.jakob@gmail.com" class="btn center">Contact</a>
+        <a href="mailto:matteo.jakob@gmail.com" class="btn center">Say Hi!</a>
       </div>
       <footer>
         <p>Copyright &copy 2023. All Rights Reserved. Matteo Jakob.</p>
@@ -226,7 +229,9 @@
     <script>
       const targetElement = document.getElementById("typed-text");
       const textToType = "Hey! I'm Matteo Jakob, a Developer.";
-      typeOut(textToType, targetElement);
+      setTimeout(function () {
+        typeOut(textToType, targetElement);
+      }, 2500);
     </script>
   </body>
 </html>

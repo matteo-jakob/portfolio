@@ -208,8 +208,13 @@ nav > ul > li {
   padding: 10px;
 }
 #pfp {
-  height: 100%;
-  width: 700px;
+  width: 256px;
+  height: 256px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 15px;
+  margin: 20px;
+  box-shadow: 10px 10px 0 var(--accent);
 }
 /*=================== Experience =================*/
 #experience {
@@ -353,6 +358,10 @@ footer > p {
 
 #sidebar {
   transition-delay: 2000ms;
+}
+
+#pfp {
+  transition-delay: 300ms ;
 }
 
 #headerLinks > li:nth-child(1){

@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -11,7 +11,7 @@
     "url": "git+https://github.com/BetterMJ/portfolio.git"
   },
   "author": "Matteo Jakob",
-  "license": "ISC",
+  "license": "GPL-2.0",
   "bugs": {
     "url": "https://github.com/BetterMJ/portfolio/issues"
   },

@@ -1,9 +1,19 @@
 
 
-# portfolio
+# Portfolio
+
 ## About the Project
+
 To display some of my skills I decided to do my own little portfolio. 
+
+## Built with
+
+* HTML
+* CSS
+* JS
+
 ## Getting Started
+
 extract folder on for example Desktop, open terminal in that and write:
 
 1. Clone the repo
@@ -20,14 +30,15 @@ extract folder on for example Desktop, open terminal in that and write:
 The server is now running on "http://localhost:3000/"
 
 ## Roadmap
+
 - [ ] Multi-language Support
     - [x] English
     - [ ] German
-- [ ] Timeline
-- [ ] Responsive
+- [ ] UpdatedTimeline
+- [ ] Responsiveness
 - [x] Animations
 - [x] Header
-- [ ] Sidebar
+- [x] Sidebar
 
 
 ## Contributing

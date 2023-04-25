@@ -25,9 +25,9 @@ extract folder on for example Desktop, open terminal in that and write:
    cd server
    ```
 3. Run the server 
-    ```sh
-  node app
-    ```
+   ```sh
+   node app
+   ```
 
 The server is now running on "http://localhost:3000/"
 

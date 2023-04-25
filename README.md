@@ -20,11 +20,11 @@ extract folder on for example Desktop, open terminal in that and write:
    ```sh
    git clone https://github.com/your_username_/Project-Name.git
    ```
-2. Go into the server folder 
+2. Go into the server folder
    ```sh
    cd server
    ```
-3. Run the server 
+3. Run the server
    ```sh
    node app
    ```

@@ -189,7 +189,7 @@ nav > ul > li {
 
 /*=================== About =================*/
 #about {
-  min-height: 100vh;
+  margin-bottom: 30vh;
   display: flex;
 }
 #about > div {
@@ -218,7 +218,7 @@ nav > ul > li {
 }
 /*=================== Experience =================*/
 #experience {
-  min-height: 100vh;
+  margin-bottom: 30vh;
   display: flex;
   flex-direction: column;
 }
@@ -257,7 +257,7 @@ nav > ul > li {
 }
 /*=================== Work =================*/
 #work {
-  min-height: 100vh;
+  margin-bottom: 30vh;
   display: flex;
   flex-direction: column;
 }
@@ -310,13 +310,23 @@ nav > ul > li {
 
 /*=================== Contact =================*/
 #contact {
-  margin-top: 20vh;
-  min-height: calc(80vh - 200px);
+  margin-bottom: 30vh;
   display: flex;
   flex-direction: column;
 }
 #contact > p {
   text-align: center;
+}
+
+#contact > ul {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  margin: 40px 20%;
+}
+
+#contact > ul > li {
+  font-size: 32px;
 }
 /*=================== Footer =================*/
 footer {

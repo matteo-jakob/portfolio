@@ -18,7 +18,7 @@ extract folder on for example Desktop, open terminal in that and write:
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/your_username_/Project-Name.git
+   git clone https://github.com/BetterMJ/portfolio.git
    ```
 2. Go into the server folder
    ```sh

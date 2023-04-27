@@ -10,7 +10,9 @@
   --dark: #0f3460;
   --main: #533483;
   --accent: #e94560;
-  --accent-scrollbar-background: #1f2f5ae3;
+  --accent-gradient-before:#e95045;
+  --accent-gradient-after:#e9459f;
+  --accent-scrollbar-background: #5a1f31e3;
   --shadow: #191e30;
 
   --foreground: gainsboro;
@@ -23,6 +25,7 @@
   --p-size: 1.2rem;
 }
 html {
+  background-image: linear-gradient(45deg, #F27121, #E94057, #8A2387);
   scroll-padding-top: calc(10vh + 60px);
   scroll-behavior: smooth;
   scrollbar-color: var(--accent) var(--accent-scrollbar-background);
@@ -112,6 +115,10 @@ nav > ul > li {
   padding: 0 20px;
 }
 
+#dropdown{
+  display: none;
+}
+
 .list-number {
   color: var(--accent);
 }
@@ -140,7 +147,7 @@ nav > ul > li {
 }
 /*=================== Pages =================*/
 #pages {
-  padding: 0 25vw;
+  padding: 0 22vw;
 }
 /*=================== Home =================*/
 #home {
@@ -215,13 +222,67 @@ nav > ul > li {
   border-radius: 15px;
   margin: 20px;
   box-shadow: 10px 10px 0 var(--accent);
+  transition: all .2s ease-out;
+}
+#pfp:hover{
+  transform: translateX(20px);
+  transform: translateY(-20px);
+  box-shadow: 30px 30px 0 var(--accent);
 }
 /*=================== Experience =================*/
+#experience {
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 50px 0;
+  margin-bottom: 200px;
+
+}
+.timeline {
+  display: grid;
+  grid-template-columns: 1fr 3px 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0;
+  grid-template-areas: 
+    "timeline1 timeline-line timeline2"
+    "timeline3 timeline-line timeline4"
+    "timeline5 timeline-line timeline6";
+  width: 80%;
+  margin: 0 auto;
+}Tom 
+.timeline1{
+  grid-area: timeline1;
+}
+.timeline4{
+  grid-area: timeline4;
+}
+.timeline5{
+  grid-area: timeline5;
+}
+.content {
+  padding: 20px;
+  background-color: var(--background-accent);
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.timeline-line{
+  background: linear-gradient(45deg, var(--accent-gradient-before), var(--accent));
+  height: 100%;
+  width: 100%;
+  grid-area: timeline-line;
+  margin: 0 auto;
+}
+/*
+old timeline
 #experience {
   margin-bottom: 30vh;
   display: flex;
   flex-direction: column;
 }
+
 #experience-content {
   display: flex;
   align-items: center;
@@ -255,6 +316,7 @@ nav > ul > li {
   margin: 0 auto;
   background-color: var(--foreground);
 }
+*/
 /*=================== Work =================*/
 #work {
   margin-bottom: 30vh;
@@ -323,6 +385,7 @@ nav > ul > li {
   justify-content: space-evenly;
   text-align: center;
   margin: 40px 20%;
+  padding: 0;
 }
 
 #contact > ul > li {
@@ -330,15 +393,11 @@ nav > ul > li {
 }
 /*=================== Footer =================*/
 footer {
-  min-height: 200px;
-  margin: 0 -25vw;
+  min-height: 180px;
   padding: 0 25vw;
   background-color: var(--background-accent);
 }
 
-footer > p {
-  padding: 50px;
-}
 /*=================== Animation =================*/
 
 .hidden {
@@ -415,5 +474,32 @@ footer > p {
 @media (prefers-reduced-motion) {
   .hidden {
     transition: none;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  #sidebar {
+    display: none;
+  }
+  #pages {
+    padding: 0 10%;
+  }
+  nav > ul > li {
+    display: none;
+  }
+  #dropdown{
+    display: flex;
+  }
+  #about{
+    display: block;
+  }
+  footer {
+    padding: 40px 10%;
+  }
+  .card{
+    padding: 15px;
+  }
+  .project-description > p {
+    padding: 15px;
   }
 }

@@ -59,7 +59,7 @@ a:hover {
   transition: all 0.4s ease;
 }
 
-.btn:hover{
+.btn:hover {
   transform: scale(110%);
   background-color: var(--accent);
   color: var(--background);
@@ -227,7 +227,7 @@ nav > ul > li {
   align-items: center;
 }
 
-#experience-content > div > p{
+#experience-content > div > p {
   margin-top: 50px;
 }
 
@@ -279,7 +279,7 @@ nav > ul > li {
 
 .project-description > p {
   padding: 50px;
-  background-color: var(--background-transparent);  
+  background-color: var(--background-transparent);
 }
 
 .project-description > div {
@@ -323,6 +323,7 @@ nav > ul > li {
   justify-content: space-evenly;
   text-align: center;
   margin: 40px 20%;
+  padding: 0;
 }
 
 #contact > ul > li {
@@ -354,7 +355,7 @@ footer > p {
   transform: translateX(0);
 }
 
-.typed-text  {
+.typed-text {
   transition-delay: 800ms;
 }
 
@@ -371,44 +372,44 @@ footer > p {
 }
 
 #pfp {
-  transition-delay: 300ms ;
+  transition-delay: 300ms;
 }
 
-#headerLinks > li:nth-child(1){
+#headerLinks > li:nth-child(1) {
   transition-delay: 200ms;
 }
-#headerLinks > li:nth-child(2){
+#headerLinks > li:nth-child(2) {
   transition-delay: 400ms;
 }
-#headerLinks > li:nth-child(3){
+#headerLinks > li:nth-child(3) {
   transition-delay: 600ms;
 }
-#headerLinks > li:nth-child(4){
+#headerLinks > li:nth-child(4) {
   transition-delay: 800ms;
 }
 
-#skills > li:nth-child(1){
+#skills > li:nth-child(1) {
   transition-delay: 100ms;
 }
-#skills > li:nth-child(2){
+#skills > li:nth-child(2) {
   transition-delay: 200ms;
 }
-#skills > li:nth-child(3){
+#skills > li:nth-child(3) {
   transition-delay: 300ms;
 }
-#skills > li:nth-child(4){
+#skills > li:nth-child(4) {
   transition-delay: 400ms;
 }
-#skills > li:nth-child(5){
+#skills > li:nth-child(5) {
   transition-delay: 500ms;
 }
-#skills > li:nth-child(6){
+#skills > li:nth-child(6) {
   transition-delay: 600ms;
 }
-#skills > li:nth-child(7){
+#skills > li:nth-child(7) {
   transition-delay: 700ms;
 }
-#skills > li:nth-child(8){
+#skills > li:nth-child(8) {
   transition-delay: 800ms;
 }
 

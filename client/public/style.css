@@ -119,6 +119,34 @@ nav > ul > li {
   display: none;
 }
 
+#dropdown-content{
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  height: calc(100vh - 10vh - 60px);
+  background-color: var(--background-accent);
+  bottom: 0;
+  width: 100vw;
+  left: 0;
+  font-size: 2rem;
+  z-index: 2;
+}
+#dropdown{
+  background-color: transparent;
+  border: none;
+}
+#dropdown>i{
+  font-size: 30px;
+  color: gainsboro;
+  transition: all 1s ease 0;
+
+}
+#dropdown>i:hover{
+  color: var(--accent);
+  cursor: pointer;
+}
 .list-number {
   color: var(--accent);
 }
@@ -365,6 +393,9 @@ old timeline
 .project-links > a > i {
   font-size: 40px;
 }
+.project-links > a {
+  padding: 0 15px;
+}
 
 .soon {
   filter: blur(5px);
@@ -399,7 +430,9 @@ footer {
 }
 
 /*=================== Animation =================*/
-
+.displayflex{
+  display: flex !important;
+}
 .hidden {
   opacity: 0;
   filter: blur(5px);
@@ -501,5 +534,12 @@ footer {
   }
   .project-description > p {
     padding: 15px;
+  }
+  .timeline{
+    display: flex;
+    flex-direction: column;
+  }
+  header{
+    position:unset;
   }
 }

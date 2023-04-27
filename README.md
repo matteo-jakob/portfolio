@@ -36,11 +36,12 @@ The server is now running on "http://localhost:3000/"
 - [ ] Multi-language Support
     - [x] English
     - [ ] German
-- [ ] Updated Timeline
-- [ ] Responsiveness
+- [x] Updated Timeline
+- [x] Responsiveness
 - [x] Animations
 - [x] Header
 - [x] Sidebar
+- [ ] Dropdown Animation
 
 
 ## Contributing

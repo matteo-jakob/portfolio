@@ -52,3 +52,33 @@ const observer = new IntersectionObserver((entries) => {
 
 const hiddenElements = document.querySelectorAll(".hidden");
 hiddenElements.forEach((el) => observer.observe(el));
+
+/*Header Dropdown*/
+var dropdownbtn = document.getElementById("dropdown")
+var dropdowncontent = document.getElementById("dropdown-content")
+var dropdownlinks = document.querySelectorAll(".dropdownlink")
+let isOpen = false;
+
+dropdownbtn.addEventListener("click", changeFlex)
+
+dropdownlinks.forEach((link) => {
+  link.addEventListener("click", removeDropDown)
+})
+
+function changeFlex() {
+  if (isOpen){
+    removeDropDown()
+  }
+  else{
+    showDropDown()
+  }
+}
+
+function showDropDown(){
+  dropdowncontent.classList.add("displayflex")
+  isOpen = true;
+}
+function removeDropDown(){
+  dropdowncontent.classList.remove("displayflex")
+  isOpen = false;
+}

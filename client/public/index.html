@@ -9,7 +9,7 @@
       crossorigin="anonymous"
     ></script>
     <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
     <title>Matteo Jakob</title>
   </head>
 
@@ -19,7 +19,10 @@
         <i class="fa-solid fa-code"></i>
       </a>
       <nav>
-        <button class="btn" id="dropdown">--</button>
+        <button id="dropdown">
+          <i class="lni lni-menu"></i> 
+        </button>
+        
         <ul id="headerLinks">
           <li class="hidden">
             <span class="list-number">1. </span><a href="#about">About</a>
@@ -62,6 +65,21 @@
     </div>
 
     <div id="pages">
+      <div id="dropdown-content">
+          <div class="dropdownlink">
+            <span class="list-number">1. </span><a href="#about">About</a>
+          </div>
+          <div class="dropdownlink">
+            <span class="list-number">2. </span
+            ><a href="#experience">Experience</a>
+          </div>
+          <div class="dropdownlink">
+            <span class="list-number">3. </span><a href="#work">Work</a>
+          </div>
+          <div class="dropdownlink">
+            <span class="list-number">4. </span><a href="#contact">Contact</a>
+          </div>
+        </div>
       <div id="home">
         <h1 class="typed-text hidden">
           <span id="typed-text"></span><span class="underscore_blink">_</span>
@@ -113,9 +131,7 @@
       <div id="experience">
         <h1><span class="list-number">2. </span>Experience</h1>
         <div class="timeline">
-
-          <div class="timeline-line">
-          </div>
+          <div class="timeline-line"></div>
 
           <div class="timeline1 content">
             <h3>2021 - Now</h3>
@@ -131,7 +147,6 @@
             <h3>2000</h3>
             <p>Primarschule Kallern</p>
           </div>
-
         </div>
       </div>
       <!--
@@ -181,6 +196,9 @@
                 >
                   <i class="lni lni-github"></i>
                 </a>
+                <a href="https://numsys.matteojakob.com" target="_blank">
+                  <i class="lni lni-link"></i>
+                </a>
               </div>
             </div>
           </div>
@@ -207,6 +225,9 @@
                   target="_blank"
                 >
                   <i class="lni lni-github"></i>
+                </a>
+                <a href="https://gamecenter.matteojakob.com" target="_blank">
+                  <i class="lni lni-link"></i>
                 </a>
               </div>
             </div>

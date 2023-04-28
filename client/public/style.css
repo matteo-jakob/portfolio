@@ -194,7 +194,7 @@ nav > ul > li {
 
 .explore > i {
   position: relative;
-  bottom: -10vh;
+  bottom: -8vh;
   color: var(--foreground);
   animation: float 1.5s ease-in-out infinite 2s;
 }
@@ -204,12 +204,14 @@ nav > ul > li {
 }
 
 @keyframes float {
-  0%,
-  100% {
+  0% {
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-1.5vh);
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
   }
 }
 
@@ -534,6 +536,14 @@ footer {
   }
   .project-description > p {
     padding: 15px;
+  }
+  .project-description > div {
+    flex-direction: column;
+  }
+  .project-links > a {
+    padding: 20px;
+    margin-left: 25%;
+
   }
   .timeline{
     display: flex;

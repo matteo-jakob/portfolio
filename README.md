@@ -5,6 +5,7 @@
 ## About the Project
 
 To display some of my skills I decided to do my own little portfolio. 
+You can open it in browser via: https://matteojakob.com/
 
 ## Built with
 

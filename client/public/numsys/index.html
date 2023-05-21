@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>NumSys</title>
+    <!------  Google Fonts - Chivo Mono - Source Serif Pro  ------>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@200;400&family=Source+Serif+Pro:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <a href="#main"
+        ><img
+          src="https://cdn.pixabay.com/photo/2016/07/29/21/42/school-1555910_960_720.png"
+          alt="Calculator Logo"
+      /></a>
+      <ul>
+        <a href="#calculator"><li>Calculator</li></a>
+        <a href="#about"><li>About us</li></a>
+      </ul>
+    </header>
+    <main id="main">
+      <h1>Welcome, Visitor.</h1>
+      <a href="#calculator"><button>Calculate!</button></a>
+    </main>
+    <div id="calculator">
+      <h1>Calculator</h1>
+      <div id="container">
+        <form id="form" action="">
+          <input type="text" id="number" placeholder="Your input" />
+          <label>Convert to &darr;</label>
+          <select name="conversion" id="conversion">
+            <option>hex</option>
+            <option>binary</option>
+            <option>octal</option>
+            <option>decimal</option>
+            <option>custom</option>
+          </select>
+          <div id="custom-number-div"></div>
+          <input type="submit" value="submit" id="submit" />
+        </form>
+        <h5 id="calc-result">Here is the result</h5>
+      </div>
+    </div>
+    <div id="about">
+      <h1>About Us</h1>
+      <p>
+        As a school project and out of personal interest Matteo Jakob and Amon
+        Burgherr decided to get closer with the number systems that are all
+        around us, binary for example is used for computer systems, which we
+        programmers are close with. <br />
+        This Program allows you to put in your number and convert it into any
+        system up to base-16. <br />
+        For feedback or inquieries contact us via email: <br />
+        A.Burgherr.Inf21@stud.bbbaden.ch <br />
+        M.Jakob.inf21@stud.bbbaden.ch
+      </p>
+    </div>
+    <footer>Copyright &copy 2022-2023. All rights reserved.</footer>
+    <script type="text/javascript" src="app.js"></script>
+  </body>
+</html>

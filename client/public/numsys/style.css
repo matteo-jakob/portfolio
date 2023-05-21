@@ -1,0 +1,225 @@
+:root {
+  --whiteP: rgb(255, 242, 245);
+  --white: rgb(233, 213, 218);
+  --brightP: rgb(175, 159, 197);
+  --bright: rgb(152, 135, 174);
+  --gray: rgb(96, 96, 145);
+  --blackP: rgb(78, 72, 121);
+  --black: rgb(54, 48, 98);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1 {
+  color: var(--bright);
+  padding: 1rem 2rem;
+  font-family: "Chivo Mono", monospace;
+}
+
+h5 {
+  color: var(--white);
+  background-color: var(--bright);
+  font-size: 2rem;
+  padding: 2rem;
+  margin-top: 0;
+}
+
+button {
+  padding: 1rem;
+  border-radius: 10px;
+  background: none;
+  border: 2px var(--brightP) solid;
+  color: var(--brightP);
+}
+
+button:hover {
+  color: var(--whiteP);
+  border-color: var(--whiteP);
+  transform: translateY(-3px);
+  transition: all 0.5s;
+}
+
+button:active {
+  transform: translateY(3px);
+}
+
+/*==================== Header ====================*/
+
+header {
+  background-color: var(--black);
+  display: flex;
+  font-family: "Chivo Mono", monospace;
+  height: 10vh;
+  position: sticky;
+  top: 0;
+}
+
+header > a > img {
+  padding: 10px;
+  height: 8vh;
+  filter: brightness(80%);
+}
+
+header > ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+}
+
+header > ul > a {
+  text-decoration: none;
+  color: var(--white);
+  margin: auto 1rem;
+}
+
+header > ul > a:hover {
+  color: var(--whiteP);
+}
+
+/*==================== Body ====================*/
+
+body {
+  margin: 0;
+  background-color: var(--blackP);
+  font-family: "Source Serif Pro", serif;
+}
+
+/*==================== Main ====================*/
+
+main {
+  text-align: center;
+  height: calc(100vh - 10vh);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  scroll-margin: 10vh;
+}
+
+/*==================== Calc ====================*/
+
+#calculator {
+  scroll-margin: 10vh;
+}
+
+#calculator > #container {
+  width: 80vh;
+  margin: 0 auto;
+}
+
+#calculator > #container > form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 3rem;
+  background-color: var(--gray);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+#calculator > #container > form > label {
+  color: var(--white);
+  padding: 1rem;
+}
+
+#calculator > #container > form > #number {
+  background-color: var(--bright);
+  color: var(--white);
+  border: 2px var(--brightP) solid;
+  padding: 1rem;
+}
+
+#calculator > #container > form > #conversion {
+  background-color: var(--bright);
+  color: var(--white);
+  border: 2px var(--brightP) solid;
+  padding: 1rem;
+}
+
+#calculator > #container > form > div > #custom-number {
+  background-color: var(--bright);
+  color: var(--white);
+  border: 2px var(--brightP) solid;
+  padding: 1rem;
+  margin: 1rem 0;
+  width: calc(100% - 4px - 1rem - 1rem);
+  border-radius: 10px;
+}
+
+#custom-number-div {
+  width: 100%;
+}
+
+#calculator > #container > form > input,
+#calculator > #container > form > select {
+  border-radius: 10px;
+}
+#submit {
+  padding: 1.2rem;
+  margin: 0 auto;
+  margin-top: 1rem;
+  border-radius: 10px;
+  background: none;
+  border: 2px var(--brightP) solid;
+  color: var(--brightP);
+  cursor: pointer;
+}
+
+#submit:hover {
+  color: var(--whiteP);
+  border-color: var(--whiteP);
+  transform: translateY(-3px);
+  transition: all 0.5s;
+}
+
+#submit:active {
+  transform: translateY(3px);
+}
+
+#calculator > #type {
+  font-family: "Chivo Mono", monospace;
+  color: var(--brightP);
+  padding-left: 28vw;
+  padding-bottom: 0;
+  font-size: 1.5rem;
+}
+
+#calculator > #type-content {
+  font-family: "Source Serif Pro", serif;
+  padding: 0 30vw;
+  color: var(--bright);
+}
+
+#calc-result {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+/*==================== About ====================*/
+
+#about {
+  scroll-margin: 10vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 60vh;
+}
+#about > p {
+  padding: 0 15vw;
+  color: var(--bright);
+  font-size: large;
+  text-align: center;
+}
+
+/*=================== Footer ===================*/
+
+footer {
+  background-color: var(--black);
+  color: var(--gray);
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+}

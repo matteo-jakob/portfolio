@@ -10,8 +10,8 @@
   --dark: #0f3460;
   --main: #533483;
   --accent: #e94560;
-  --accent-gradient-before:#e95045;
-  --accent-gradient-after:#e9459f;
+  --accent-gradient-before: #e95045;
+  --accent-gradient-after: #e9459f;
   --accent-scrollbar-background: #5a1f31e3;
   --shadow: #191e30;
 
@@ -25,7 +25,7 @@
   --p-size: 1.2rem;
 }
 html {
-  background-image: linear-gradient(45deg, #F27121, #E94057, #8A2387);
+  background-image: linear-gradient(45deg, #f27121, #e94057, #8a2387);
   scroll-padding-top: calc(10vh + 60px);
   scroll-behavior: smooth;
   scrollbar-color: var(--accent) var(--accent-scrollbar-background);
@@ -115,11 +115,11 @@ nav > ul > li {
   padding: 0 20px;
 }
 
-#dropdown{
+#dropdown {
   display: none;
 }
 
-#dropdown-content{
+#dropdown-content {
   display: none;
   flex-direction: column;
   justify-content: space-around;
@@ -133,17 +133,16 @@ nav > ul > li {
   font-size: 2rem;
   z-index: 2;
 }
-#dropdown{
+#dropdown {
   background-color: transparent;
   border: none;
 }
-#dropdown>i{
+#dropdown > i {
   font-size: 30px;
   color: gainsboro;
   transition: all 1s ease 0;
-
 }
-#dropdown>i:hover{
+#dropdown > i:hover {
   color: var(--accent);
   cursor: pointer;
 }
@@ -247,14 +246,15 @@ nav > ul > li {
 #pfp {
   width: 256px;
   height: 256px;
+  aspect-ratio: 1 / 1;
   object-fit: cover;
   object-position: center;
   border-radius: 15px;
-  margin: 20px;
+  margin: 30px;
   box-shadow: 10px 10px 0 var(--accent);
-  transition: all .2s ease-out;
+  transition: all 0.2s ease-out;
 }
-#pfp:hover{
+#pfp:hover {
   transform: translateX(20px);
   transform: translateY(-20px);
   box-shadow: 30px 30px 0 var(--accent);
@@ -268,27 +268,26 @@ nav > ul > li {
   justify-content: center;
   margin: 50px 0;
   margin-bottom: 200px;
-
 }
 .timeline {
   display: grid;
   grid-template-columns: 1fr 3px 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   gap: 0;
-  grid-template-areas: 
+  grid-template-areas:
     "timeline1 timeline-line timeline2"
     "timeline3 timeline-line timeline4"
     "timeline5 timeline-line timeline6";
   width: 80%;
   margin: 0 auto;
-}Tom 
-.timeline1{
+}
+Tom .timeline1 {
   grid-area: timeline1;
 }
-.timeline4{
+.timeline4 {
   grid-area: timeline4;
 }
-.timeline5{
+.timeline5 {
   grid-area: timeline5;
 }
 .content {
@@ -298,8 +297,12 @@ nav > ul > li {
   margin: 10px;
 }
 
-.timeline-line{
-  background: linear-gradient(45deg, var(--accent-gradient-before), var(--accent));
+.timeline-line {
+  background: linear-gradient(
+    45deg,
+    var(--accent-gradient-before),
+    var(--accent)
+  );
   height: 100%;
   width: 100%;
   grid-area: timeline-line;
@@ -432,7 +435,7 @@ footer {
 }
 
 /*=================== Animation =================*/
-.displayflex{
+.displayflex {
   display: flex !important;
 }
 .hidden {
@@ -522,16 +525,16 @@ footer {
   nav > ul > li {
     display: none;
   }
-  #dropdown{
+  #dropdown {
     display: flex;
   }
-  #about{
+  #about {
     display: block;
   }
   footer {
     padding: 40px 10%;
   }
-  .card{
+  .card {
     padding: 15px;
   }
   .project-description > p {
@@ -543,13 +546,12 @@ footer {
   .project-links > a {
     padding: 20px;
     margin-left: 25%;
-
   }
-  .timeline{
+  .timeline {
     display: flex;
     flex-direction: column;
   }
-  header{
-    position:unset;
+  header {
+    position: unset;
   }
 }

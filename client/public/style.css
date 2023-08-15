@@ -414,7 +414,6 @@ old timeline
 
 /*=================== Contact =================*/
 #contact {
-  margin-bottom: 30vh;
   display: flex;
   flex-direction: column;
 }
@@ -548,6 +547,9 @@ footer {
   }
   #dropdown {
     display: flex;
+  }
+  header{
+    position:static;
   }
   #about {
     display: block;

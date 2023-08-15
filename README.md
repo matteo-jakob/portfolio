@@ -1,17 +1,15 @@
-
-
 # Portfolio
 
 ## About the Project
 
-To display some of my skills I decided to do my own little portfolio. 
+To display some of my skills I decided to do my own little portfolio.
 You can open it in browser via: https://matteojakob.com/
 
 ## Built with
 
-* HTML
-* CSS
-* JS
+- HTML
+- CSS
+- JS
 
 ## Getting Started
 
@@ -35,15 +33,15 @@ The server is now running on "http://localhost:3000/"
 ## Roadmap
 
 - [ ] Multi-language Support
-    - [x] English
-    - [ ] German
-- [x] Updated Timeline
+  - [x] English
+  - [ ] German
+- [x] Timeline
 - [x] Responsiveness
 - [x] Animations
 - [x] Header
 - [x] Sidebar
-- [ ] Dropdown Animation
-
+- [x] Dropdown
+- [x] Dropdown Animation
 
 ## Contributing
 

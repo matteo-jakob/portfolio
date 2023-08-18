@@ -1,6 +1,6 @@
 // Welcome Screen animation
 function typeOut(text, targetElement) {
-  const typingDelay = 30;
+  const typingDelay = 20;
   const randomDelayMin = 10;
   const randomDelayMax = 50;
   let i = 0;
@@ -54,31 +54,38 @@ const hiddenElements = document.querySelectorAll(".hidden");
 hiddenElements.forEach((el) => observer.observe(el));
 
 /*Header Dropdown*/
-var dropdownbtn = document.getElementById("dropdown")
-var dropdowncontent = document.getElementById("dropdown-content")
-var dropdownlinks = document.querySelectorAll(".dropdownlink")
+var dropdownbtn = document.getElementById("dropdown");
+var dropdowncontent = document.getElementById("dropdown-content");
+var dropdownlinks = document.querySelectorAll(".dropdownlink");
 let isOpen = false;
 
-dropdownbtn.addEventListener("click", changeFlex)
+dropdownbtn.addEventListener("click", changeFlex);
 
 dropdownlinks.forEach((link) => {
-  link.addEventListener("click", removeDropDown)
-})
+  link.addEventListener("click", removeDropDown);
+});
 
 function changeFlex() {
-  if (isOpen){
-    removeDropDown()
-  }
-  else{
-    showDropDown()
+  if (isOpen) {
+    removeDropDown();
+  } else {
+    showDropDown();
   }
 }
 
-function showDropDown(){
-  dropdowncontent.classList.add("displayflex")
+function showDropDown() {
+  dropdowncontent.classList.add("displayflex");
   isOpen = true;
 }
-function removeDropDown(){
-  dropdowncontent.classList.remove("displayflex")
+function removeDropDown() {
+  dropdowncontent.classList.remove("displayflex");
   isOpen = false;
 }
+
+// Header Hidden
+document.addEventListener("DOMContentLoaded", () => {
+  setTimeout(() => {
+    const header = document.querySelectorAll(".header--hidden");
+    header[0].classList.remove("header--hidden");
+  }, 2400);
+});

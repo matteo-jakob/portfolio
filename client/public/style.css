@@ -308,48 +308,7 @@ Tom .timeline1 {
   grid-area: timeline-line;
   margin: 0 auto;
 }
-/*
-old timeline
-#experience {
-  margin-bottom: 30vh;
-  display: flex;
-  flex-direction: column;
-}
 
-#experience-content {
-  display: flex;
-  align-items: center;
-}
-
-#experience-content > div > p {
-  margin-top: 50px;
-}
-
-#experience-content > div > p:nth-child(1) {
-  margin-top: 1rem;
-}
-
-#timeline {
-  padding: 0 50px;
-}
-#timeline > ul::before {
-  content: "";
-  display: block;
-  width: 1px;
-  height: 50px;
-  margin: 0 auto;
-  background-color: var(--foreground);
-}
-
-#timeline > ul > li::after {
-  content: "";
-  display: block;
-  width: 1px;
-  height: 50px;
-  margin: 0 auto;
-  background-color: var(--foreground);
-}
-*/
 /*=================== Work =================*/
 #work {
   margin-bottom: 30vh;
@@ -439,10 +398,11 @@ footer {
   background-color: var(--background-accent);
 }
 
-/*=================== Animation =================*/
 .displayflex {
   display: flex !important;
 }
+/*=================== Animation =================*/
+
 .hidden {
   opacity: 0;
   filter: blur(5px);
@@ -456,20 +416,16 @@ footer {
   transform: translateX(0);
 }
 
-.typed-text {
-  transition-delay: 800ms;
-}
-
 .explore {
-  transition-delay: 1200ms;
+  transition-delay: 3500ms;
 }
 
 .home-p {
-  transition-delay: 800ms;
+  transition-delay: 3500ms;
 }
 
 #sidebar {
-  transition-delay: 2000ms;
+  transition-delay: 3400ms;
 }
 
 #pfp {
@@ -477,16 +433,16 @@ footer {
 }
 
 #headerLinks > li:nth-child(1) {
-  transition-delay: 200ms;
+  transition-delay: 000ms;
 }
 #headerLinks > li:nth-child(2) {
-  transition-delay: 400ms;
+  transition-delay: 200ms;
 }
 #headerLinks > li:nth-child(3) {
-  transition-delay: 600ms;
+  transition-delay: 400ms;
 }
 #headerLinks > li:nth-child(4) {
-  transition-delay: 800ms;
+  transition-delay: 600ms;
 }
 
 #skills > li:nth-child(1) {
@@ -548,8 +504,8 @@ footer {
   #dropdown {
     display: flex;
   }
-  header{
-    position:static;
+  header {
+    position: static;
   }
   #about {
     display: block;

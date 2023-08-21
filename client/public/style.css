@@ -385,6 +385,7 @@ Tom .timeline1 {
   justify-content: space-evenly;
   text-align: center;
   margin: 40px 20%;
+  margin-bottom: 0;
   padding: 0;
 }
 
